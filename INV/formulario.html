@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--action="recibeFormulario.php" volver a poner para que se redirija la pagina al archivo php-->
+    <form action="recibeFormulario.php" method="post">
+
+        <div class="contForm">
+            <label form="codigo" class="lbl_titulo">Informacion Requerida</label>
+            <br>
+            <label for="nombre" label="lbl_inputs">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="nombre" placeholder="Escriba su nombre" required>
+            <br>
+            <label for="correo" label="lbl_inputs">Correo</label>
+            <input type="text" id="email" name="email" class="email" placeholder="ejemplo@gmail.com" required>
+            <br>
+            <label for="telefono" label="lbl_inputs">Contacto</label>
+            <input type="tel" id="telefono" name="telefono" class="telefono" placeholder="Telefono de contacto" required>
+            <br>
+            <label for="mensaje" label="lbl_inputs">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" class="mensaje" cols="30" rows="10"
+                placeholder="Escribe tu mensaje"></textarea>
+            <br>
+            <br>
+            <label for="eresHijo">Eres Hijo de Iglesia Nueva Vida?</label>
+            <select name="opciones" id="opciones" title="opciones" required>
+                <option value="0">---selecciona una opcion---</option>
+                <option value="Si">SI</option>
+                <option value="No">NO</option>
+                <option value="Soy Nuevo en la INV">SOY NUEVO EN LA INV</option>
+            </select>
+            <br>
+            <input type="submit" name="btnEnviar" id="btnEnviar" class="btnEnviar" onclick="return Contactos()">
+        </div>
+    </form>
+
+    <script type="text/javascript" src="./Contactos.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    width: 100%;    
+    background: #100721;
+    font-weight: 400;
+    color: white;
+    background-image: url(../img/extra1.jpg);
+    background-size: cover;
+}
+
+.nav-bg {
+  margin-top: 20px;
+}
+
+.cont-ministerios {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nom_Ministerio {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: bold;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.carrusel_Al {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  gap: 10px;
+  margin-top: 70px;
+  background: rgba(128, 100, 0, 0.666);
+  
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url(../img/Alabanza2.jpg)
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url(../img/bajista.jpg)
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url(../img/Alabanza1.jpg)
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url(../img/AlabanzaChrist+.jpg)
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(5) {
+        background: url(../img/voz2.jpg)
+          no-repeat 50% / cover;
+      }
+    &:nth-of-type(6) {
+    background: url(../img/voz1.jpg)
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(7) {
+    background: url(../img/metales.jpg)
+        no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translateY(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+    }
+
+    &:hover {
+      flex: 0 0 400px;
+      box-shadow: 1px 3px 15px #ffae00;
+      transform: translatey(10px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+
+  }
+}
+
+.footer {
+  color: black;
+}

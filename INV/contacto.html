@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shantell+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css" >
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+
+    <title> Iglesia Nueva Vida Internacional </title>
+</head>
+
+<body>
+
+    <div class="principal">
+
+        <header class="header" >
+            <div class="logo" >
+                <a href="index.html"><img class="img" src="img/logo.png" alt="logo"></a>
+            </div>
+        </header>
+
+        <div class="nav-bg">
+            <div class="menu-bar">
+                <a href="#" class="bt-menu"><span class="icon-menu" title="menu"></span></a>
+            </div>
+
+            <nav class="navegacion-principal">
+                <a href="index.html">Inicio</a>
+                <a href="pastores.html">Pastores</a>
+                <a href="ministerios.html">Ministerios</a>
+                <a href="donaciones.html">Donaciones</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+        <main class="contenedor1 sombra1">
+            <!--action="./recibeFormulario.php"-->
+            <form method="post" class="form">
+
+                <label form="codigo" class="lbl_titulo">Informacion Requerida</label>
+                <br>
+
+                <div class="inputbox">
+                    <input type="text" id="nombre" name="nombre" class="nombre" required="required">
+                    <span>Nombre</span>
+                    <i></i>
+                </div>
+    
+                <div class="inputbox">
+                    <input type="email" id="email" name="email" class="email" required="required">
+                    <span>Correo</span>
+                    <i></i>
+                </div>
+
+                <label for="telefono" label="lbl_inputs">Contacto</label>
+                <input type="tel" id="telefono" name="telefono" class="telefono" placeholder="Telefono de contacto">
+                <br>
+
+                <label for="mensaje" label="lbl_inputs">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" class="mensaje" cols="30" rows="10"
+                    placeholder="Escribe tu mensaje"></textarea>
+                <br>
+                <br>
+
+                <label for="eresHijo">Eres Hijo de Iglesia Nueva Vida?</label>
+                <select name="opciones" id="opciones" title="opciones" required>
+                    <option value="0">---selecciona una opcion---</option>
+                    <option value="Si">SI</option>
+                    <option value="No">NO</option>
+                    <option value="Soy Nuevo en la INV">SOY NUEVO EN LA INV</option>
+                </select>
+
+                <br>
+                <button type="submit" name="btnEnviar" id="btnEnviar" class="btnEnviar" onclick="return Contactos()">Enviar</button>
+            
+            </form>
+        </main>
+        <!-- linea de codigo para conectar con el archivo javascript -->
+            <script type="text/javascript" src="./JavaScript/Contactos.js"></script>
+        
+        <footer class="footer">
+            <p> (c) 2023 Iglesia Nueva Vida Internacional </p>
+        </footer>
+    </div>
+</body>
+
+</html>

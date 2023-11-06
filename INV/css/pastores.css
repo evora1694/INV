@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Roboto&family=Shantell+Sans:wght@300&family=Ubuntu:wght@300&display=swap');
+
+body {
+    min-height: 100vh;
+}
+
+.nav-bg {
+    margin-top: 20px;
+}
+
+.contenedor-principal {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, transparent 50%, green 50%),
+                       linear-gradient(to top right, blue 50%, transparent 50%);
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.pastrgen1 {
+    margin-top: 50px;
+}
+.pastrgen2 {
+    margin-bottom: 50px;
+}
+
+.imgpstr{
+    width: 500px;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 6px 15px 25px 15px #1d2b49;
+    flex-grow: 1;
+    flex-basis: 150;
+}
+
+.pastor__texto {
+    width: 500px;
+    height: 100%;
+    text-align:justify;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+
+.pastor__texto p{
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.banner_iglesia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: 600px;
+}
+
+
+footer{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    margin-top: 2rem;
+    color: #FFFFFF;
+}
